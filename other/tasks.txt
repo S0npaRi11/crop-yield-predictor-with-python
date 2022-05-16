@@ -1,0 +1,11 @@
+DONE : Import the preprocessed dataset (Convert labels into integers)
+DONE : Normalize the data with interquantile range
+DONE : Create test data and train data
+DONE : Create a small-dataset of size 0.1% of the original dataset
+DONE : Run Ridge Regression on small-dataset
+DONE : Run Lasso Regression on small-dataset
+DONE : Run E-Net Regression on small-dataset
+DONE : Run Stacked Regression on small-dataset
+DONE : Run Stacked Regression on filtered-pre-dataset
+DONE : Save the output model (if it has a good enough accurecy)
+

@@ -1,0 +1,62 @@
+# this file shows how to fit the regression methods
+
+# training Ridge
+# model_ridge = Ridge(alpha=0.01)
+# model_ridge.fit(X_train, y_train)
+
+# pred_train_rr = rr.predict(X_train)
+# print('Ridge Mean Square Error on X_train : ', np.sqrt(mean_squared_error(y_train, pred_train_rr)))
+# print('R2 Score : ', r2_score(y_train, pred_train_rr))
+
+# pred_test_rr = rr.predict(X_test)
+# print('Ridge Mean Square Error on X_test: ', np.sqrt(mean_squared_error(y_test, pred_test_rr)))
+# print('R2 Score : ', r2_score(y_test, pred_test_rr))
+
+# """
+#     Ridge learning results
+#     Ridge Mean Square Error on X_train :  3.511652920583083e-07
+#     R2 Score :  0.9999999999967988
+#     Ridge Mean Square Error on X_test:  3.440461674912429e-07
+#     R2 Score :  0.9999999999968952
+# """
+
+#traiining lasso
+# model_lasso = Lasso(alpha=0.01)
+# model_lasso.fit(X_train, y_train)
+
+# pred_train_lasso= model_lasso.predict(X_train)
+# print('Lasso Mean Sqaure Error on X_train',np.sqrt(mean_squared_error(y_train,pred_train_lasso)))
+# print(r2_score(y_train, pred_train_lasso))
+
+
+# pred_test_lasso= model_lasso.predict(X_test)
+# print('Lasso Mean Sqaure Error on X_test',np.sqrt(mean_squared_error(y_test,pred_test_lasso))) 
+# print(r2_score(y_test, pred_test_lasso))
+
+# """"
+#     Lasso learning results
+#     Lasso Mean Sqaure Error on X_train 0.05095023809670468
+#     0.9326116424575633
+#     Lasso Mean Sqaure Error on X_test 0.050687045279698376
+#     0.9326097733653171
+# """
+
+#training enet
+# model_enet = ElasticNet(alpha=0.01)
+# model_enet.fit(X_train, y_train)
+
+# pred_train_enet= model_enet.predict(X_train)
+# print("E-Net MSE on X_train",np.sqrt(mean_squared_error(y_train,pred_train_enet)))
+# print(r2_score(y_train, pred_train_enet))
+
+# pred_test_enet= model_enet.predict(X_test)
+# print('E-Net MSE on X_test',np.sqrt(mean_squared_error(y_test,pred_test_enet)))
+# print(r2_score(y_test, pred_test_enet))
+
+# """"
+#     eNet learning results
+#     E-Net MSE on X_train 0.04509683416228673
+#     0.9472060026969356
+#     E-Net MSE on X_test 0.04486387817886795
+#     0.9472045383957624
+# """
