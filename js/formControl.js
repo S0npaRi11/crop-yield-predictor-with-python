@@ -59,10 +59,16 @@ stateSelect.addEventListener('change', (e) => {
     populateOptions(districtSelect, districts)
 })
 
+// registration form
+
+// login form
+
+
+// prediction form
 $(document).ready(() => {
     $('.prediction').hide()
     
-    $('form').submit((e) => {
+    $('#predictionForm').submit((e) => {
         e.preventDefault()
 
         const formValues = []
